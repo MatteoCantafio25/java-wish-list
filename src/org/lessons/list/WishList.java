@@ -1,6 +1,7 @@
 package org.lessons.list;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Scanner;
 
 public class WishList {
@@ -39,6 +40,10 @@ public class WishList {
             }else {
                 // Esco dal ciclo
                 goNext = false;
+
+                // Ordino la lista in ordine alfabetico
+                Collections.sort(list);
+
                 // Mostro a video il resoconto della lista
                 System.out.print(list);
                 System.out.print(" Santa is coming....");
